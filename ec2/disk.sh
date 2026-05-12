@@ -1,8 +1,8 @@
 #!/bin/bash
-/*growpart /dev/nvme0n1 4 #grow full size
-pvresize /dev/nvme0n1p4 #i wrote coz lvextend may fail
-lvextend -r -L +30G /dev/mapper/RootVG-varVol
-xfs_growfs /va
+# growpart /dev/nvme0n1 4 #grow full size
+# pvresize /dev/nvme0n1p4 #i wrote coz lvextend may fail
+# lvextend -r -L +30G /dev/mapper/RootVG-varVol
+# xfs_growfs /va
 */
 # xfx_growfs /home ----no need to use this command when using -r in the above
 
