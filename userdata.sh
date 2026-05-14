@@ -20,15 +20,18 @@ chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 mkdir -p /opt/sonarqube
 cd /opt/sonarqube
 
+# t3.medium
+#volume_size = 20
+#volume_type = "gp3" # or "gp2",
 # Create compose file
-cat <<EOF > docker-compose.yml
-version: '3'
-services:
-  sonarqube:
-    image: sonarqube:lts-community
-    ports:
-      - "9000:9000"
-EOF
+# cat <<EOF > docker-compose.yml
+# version: '3'
+# services:
+#   sonarqube:
+#     image: sonarqube:lts-community
+#     ports:
+#       - "9000:9000"
+# EOF
 
-# Run compose
-docker compose up -d
+# # Run compose
+# docker compose up -d
